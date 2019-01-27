@@ -3,11 +3,18 @@
 LIRI-BOT (a Language Interpretation and Recognition Interface)
 LIRI is anode app that takes in parameters and gives you back data based off the following parameters:
 
+
 concert-this
+
 Spotify-this-song
+
 movie-this
+
 do-what-it-says
+
 Getting Started:
+
+
 Download the "screenshots" folder to access the animations of each command. This will allow you to better see how LIRI works with each given command.
 
 concert-this:
