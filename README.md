@@ -46,6 +46,7 @@ Screen shot
 LIRI will use the text from “random.txt” and call on of LIRI’s commands. It should run Spotify-this-song for “I want it That way”.
 
 Technologies used:
+
 Spotify API
 OMDB API
 Bands In Town API
