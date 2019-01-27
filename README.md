@@ -48,8 +48,13 @@ LIRI will use the text from “random.txt” and call on of LIRI’s commands. I
 Technologies used:
 
 Spotify API
+
 OMDB API
+
 Bands In Town API
+
 Node.js
+
 Javascript
+
 NPM packages
