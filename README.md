@@ -19,6 +19,8 @@ Download the "screenshots" folder to access the animations of each command. This
 
 concert-this:
 
+![alt text](liri-node-app/images/concert-this.png)
+      
 
 This will search the Bands in Town Artist Events API for an artist and render the following information about each event to the terminal:
 
