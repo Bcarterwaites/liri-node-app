@@ -6,7 +6,7 @@ LIRI is anode app that takes in parameters and gives you back data based off the
 
 concert-this: This command uses the Bands in Town API to pull information for the name of the venue, the venues location, the date of the event and the time of the event. 
 
-![Image of concert-this](liri-node-app/images/concert-this.png)
+![Image of concert-this](https://github.com/Bcarterwaites/liri-node-app/blob/master/images/concert-this.png)
 
 Spotify-this: This command uses the Spotify API to pull information for the artist, name of the song, a preview link  and the album that the song is from.
 
