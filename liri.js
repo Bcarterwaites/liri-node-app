@@ -16,22 +16,21 @@ var spotify = new Spotify(keys.spotify);
 var command = process.argv[2];
 var userQuery = process.argv.slice(3).join(" ");
 
-var queryUrl = "https://rest.bandsintown.com/artists/" + userQuery + "/events?app_id=codingbootcamp"
 
-var queryUrl2 = "https://www.omdbapi.com/?t=" + userQuery + "&y=&plot=short&apikey=trilogy"
+
 
 
 
 function inputCommand(command, userQuery) {
     switch (command) {
         case "spotify-this":
-        spotThis();
+        spotThis(userQuery);
         break;
         case "movie-this":
-        movieThis();
+        movieThis(userQuery);
         break;
         case "concert-this":
-        concertThis();
+        concertThis(userQuery);
         break;
         case "do-what-it-says":
         doThis(userQuery);
@@ -69,6 +68,7 @@ function spotThis() {
 
 function concertThis() {
     
+    var queryUrl = "https://rest.bandsintown.com/artists/" + userQuery + "/events?app_id=codingbootcamp"
 
     request(queryUrl, function(error, response, body) {
 
@@ -107,24 +107,27 @@ function movieThis() {
         userQuery = "mr nobody"
      }
 
-    request(queryUrl2, function(error, response, body) {
+     
+    var queryUrl = "https://www.omdbapi.com/?t=" + userQuery + "&y=&plot=short&apikey=trilogy"
+
+     request(queryUrl, function(error, response, body) {
+
+    
         var movieInfo = JSON.parse(body);
 
         var ratingsArr = movieInfo.Ratings;
 
-     // if (ratingsArr.length > 2) {
+   
+        if (ratingsArr.length > 2) {
 
-      // }
+        }
 
-      for (i = 0; i < ratingsArr.length; i++)
-
-
-       if (!error && response.statusCode === 200) {
+        if (!error && response.statusCode === 200) {
             
             console.log("Title: " + movieInfo.Title);
             console.log("Release Year: " + movieInfo.Year);
             console.log("IMDB Rating: " + movieInfo.imdbRating);
-            //console.log("Rotten Tomatoes Rating: " + movieInfo.Ratings[1].Value)
+            console.log("Rotten Tomatoes Rating: " + movieInfo.Ratings[1].Value)
             console.log("Country: " + movieInfo.Country);
             console.log("Language: " + movieInfo.Language);
             console.log("Plot: " + movieInfo.Plot);
