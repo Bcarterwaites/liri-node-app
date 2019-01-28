@@ -4,55 +4,14 @@ LIRI-BOT (a Language Interpretation and Recognition Interface)
 LIRI is anode app that takes in parameters and gives you back data based off the following parameters:
 
 
-concert-this
+concert-this: This command uses the Bands in Town API to pull information for the name of the venue, the venues location, the date of the event and the time of the event. 
 
-Spotify-this-song
+Spotify-this: This command uses the Spotify API to pull information for the artist, name of the song, a preview link  and the album that the song is from.
 
-movie-this
-
-do-what-it-says
-
-Getting Started:
+movie-this:  This command uses the OMDB API to pull information for the name of the movie, the rating, the rotten tomatoes rating, where the movie was produced, language, plot and actors in the movie.  
 
 
-Download the "screenshots" folder to access the animations of each command. This will allow you to better see how LIRI works with each given command.
-
-concert-this:
-
-![alt text](liri-node-app/images/concert-this.png)
-      
-
-This will search the Bands in Town Artist Events API for an artist and render the following information about each event to the terminal:
-
-Name of the venue
-Venue location
-Date of the Event (use moment to format this as "MM/DD/YYYY")
-Spotify-this-song:
-Screen shot
-
-This will show the following information about the song in your terminal/bash window
-
-Artist(s)
-The song's name
-A preview link of the song from Spotify
-The album that the song is from
-movie-this:
-Screen shot
-
-This will output the following information to your terminal/bash window:
-
-Title of the movie.
-Year the movie came out.
-IMDB Rating of the movie.
-Rotten Tomatoes Rating of the movie.
-Country where the movie was produced.
-Language of the movie.
-Plot of the movie.
-Actors in the movie.
-do-what-it-says:
-Screen shot
-
-LIRI will use the text from “random.txt” and call on of LIRI’s commands. It should run Spotify-this-song for “I want it That way”.
+do-what-it-says:  This command takes the information inside the random text folder and runs the spotify command to bring back information on the song "I Want it That Way"
 
 Technologies used:
 
